@@ -10,7 +10,7 @@ class PortaModel extends Model {
 
 		$content = str_replace("'", "\'", $content);
 
-		$this->query = "INSERT INTO portafolio (p_id, nom_proyecto, imaten, descripcion) VALUES ('$p_id', $nom_proyecto, $imagen, $descripcion)";
+		$this->query = "INSERT INTO portafolio (p_id, nom_proyecto, imagen, descripcion) VALUES ('$p_id', $nom_proyecto, $imagen, $descripcion)";
 		$this->set_query();
 	}
 
