@@ -45,8 +45,6 @@ class PortaModel extends Model {
 		$this->set_query();
 	}
 
-
-
 	public function delete($p_id = '') {
 		$this->query = "DELETE FROM portafolio WHERE p_id = '$p_id'";
 		$this->set_query();
