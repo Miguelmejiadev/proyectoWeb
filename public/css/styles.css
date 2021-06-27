@@ -2,12 +2,14 @@
   /*outline: solid 1px tomato !important;*/	
   margin: 0;
   padding: 0;
+  /* border: 5px solid red; */
 }
 
 
 html, body {
     max-width: 100% !important;
     overflow-x: hidden !important;
+    /* border: 5px solid red; */
 }
 
 
@@ -84,8 +86,6 @@ body { background: #333; }
   transition: opacity 0.2s ease-out, transform 0.2s ease-out;
 }
 
-.hoveritem .link:hover {
-}
 .hoveritem .link:hover .hovercontent {
   opacity: 1;
   filter: alpha(opacity=100);
@@ -95,5 +95,9 @@ body { background: #333; }
   -webkit-transform: scale3d(1, 1, 1) translate3d(0, 0, 0);
   transform: scale3d(1, 1, 1) translate3d(0,0,0);
 }
-.hoveritem .link:hover img {
+/* 
+.hoveritem .link:hover {
 }
+
+.hoveritem .link:hover img {
+} */

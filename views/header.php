@@ -5,8 +5,11 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
-	<link rel="stylesheet" type="text/css" href="./public/css/styles.css">
+	<link rel="stylesheet" type="text/css" href="./css/styles.css">
 	<title>ProyectoDM</title>
+  <style>
+  /* *{  border: 0.5px solid red;} */
+  </style>
 </head>
 
 <body>

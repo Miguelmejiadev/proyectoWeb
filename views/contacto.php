@@ -1,29 +1,49 @@
-<script src="https://threejs.org/build/three.js"></script>
-<script>
-    const scene = new THREE.Scene();
-    const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
-
-    const renderer = new THREE.WebGLRenderer();
-    renderer.setSize(window.innerWidth, window.innerHeight);
-    document.body.appendChild(renderer.domElement);
-
-    const geometry = new THREE.BoxGeometry();
-    const material = new THREE.MeshBasicMaterial({
-        color: 0x00ff00
-    });
-    const cube = new THREE.Mesh(geometry, material);
-    scene.add(cube);
-
-    camera.position.z = 5;
-
-    const animate = function() {
-        requestAnimationFrame(animate);
-
-        cube.rotation.x += 0.01;
-        cube.rotation.y += 0.01;
-
-        renderer.render(scene, camera);
-    };
-
-    animate();
-</script>
+<body>
+    <section class="container-fluid">
+        <div class="row" style="padding: 60px;">
+            <div class="col-12 text-center" style="padding: 25px;">
+                <h2>Let's start a conversation / Empecemos una conversación</h2>
+            </div>
+            <div class="col-5" style="padding: 50px 35px 50px 60px;">
+                <img src="./public/img/phone.jpg" width="100%" style="border-radius:20px;">
+                <br><br>
+                <h6>
+                    Photo by <a href="https://unsplash.com/@alex_andrews?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Alexander Andrews</a> on <a href="https://unsplash.com/s/photos/contact?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+                </h6>
+            </div>
+            <div class="col-7" style="padding: 80px 150px 80px 10px;">
+                <form>
+                    <div class="form-group">
+                        <label for="f_name">
+                            <h5>
+                                Full Name / Nombre completo
+                            </h5>
+                        </label>
+                        <input type="text" class="form-control form-control-lg" id="f_name" aria-describedby="emailHelp" placeholder="nombre(s) apellido(s)" height="50px">
+                    </div>
+                    <br>
+                    <div class="form-group">
+                        <label for="f_email">
+                            <h5>
+                                Email address/ Correo electrónico
+                            </h5>
+                        </label>
+                        <input type="email" class="form-control form-control-lg" id="f_name" placeholder="tu@ejemplo.com">
+                    </div>
+                    <br>
+                    <div class="form-group">
+                        <label for="f_email">
+                            <h5>
+                                Message/ Mensaje o razón
+                            </h5>
+                        </label>
+                        <!-- <input type="email" class="form-control form-control-lg" id="f_name" placeholder="correo@dominio.com"> -->
+                        <textarea class="form-control form-control-lg" id="exampleFormControlTextarea1" rows="3" placeholder="Escribe tu mensaje aquí"></textarea>
+                    </div>
+                    <br>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+            </div>
+        </div>
+    </section>
+</body>
