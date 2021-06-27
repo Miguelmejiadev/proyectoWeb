@@ -99,5 +99,24 @@ body { background: #333; }
 .hoveritem .link:hover {
 }
 
-.hoveritem .link:hover img {
+.hoveritem .link:hover img {-
 } */
+
+/*[CSS] CONTACT PAGE [CSS] */
+
+#leftPanel{
+  /* padding: 50px 35px 50px 60px; */
+  /* background-color:rgba(1,1,1,0.25);*/
+  /* background-color:red; */
+}
+
+#right-panel{
+  padding: 80px 150px 80px 10px;
+  /* background-color:red; */
+}
+
+#fondo-blanco{
+  background-color: white;
+}
+
+/*[CSS] CONTACT PAGE [CSS] */
